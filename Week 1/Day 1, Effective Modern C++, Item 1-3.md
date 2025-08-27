@@ -1,4 +1,3 @@
-Effective Modern C++, Item 1-3
 
 ## Introduction
 Terminology and Conventions
