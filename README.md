@@ -16,23 +16,23 @@ Code Demo: `unique_ptr` demo (constructor, destructor, move).
 | 1   | Effective Modern C++, Item 1-3<br>- Two Sum<br>- Valid Parentheses<br>- Merge Two Sorted Lists                    | ✔️  |
 | --- | ----------------------------------------------------------------------------------------------------------------- | --- |
 | 2   | Effective Modern C++, Item 4-6<br>- Climbing Stairs<br>- Same Tree<br>- Maximum Depth of Binary Tree              | ✔️  |
-| 3   | Effective Modern C++, Item 7-9<br>- Best Time to Buy and Sell Stock<br>- Valid Palindrome<br>- Linked List Cycle  |     |
-| 4   | Effective Modern C++, Item 9-11<br>- Reverse Bits<br>- Number of 1 Bits<br>- Reverse Linked List                  |     |
-| 5   | Effective Modern C++, Item 12-14<br>- Contains Duplicate<br>- Invert Binary Tree<br>- Valid Anagram               |     |
-| 6   | Effective Modern C++, Item 15-17<br>- Meeting Rooms<br>- Missing Number<br>- Counting Bits                        |     |
-| 7   | Effective Modern C++, Item 18-20<br>- Subtree of Another Tree<br>- Longest Substring Without Repeating Characters |     |
+| 3   | Effective Modern C++, Item 7-9<br>- Best Time to Buy and Sell Stock<br>- Valid Palindrome<br>- Linked List Cycle  | ✔️  |
+| 4   | Effective Modern C++, Item 10-12<br>- Reverse Bits<br>- Number of 1 Bits<br>- Reverse Linked List                 | ✔️  |
+| 5   | Effective Modern C++, Item 13-15<br>- Contains Duplicate<br>- Invert Binary Tree<br>- Valid Anagram               |     |
+| 6   | Effective Modern C++, Item 16-18<br>- Meeting Rooms<br>- Missing Number<br>- Counting Bits                        |     |
+| 7   | Effective Modern C++, Item 19-21<br>- Subtree of Another Tree<br>- Longest Substring Without Repeating Characters |     |
 
 ### **Week 2: Templates & Type Deduction**
 Investigation Topics: Templates, `auto`, `decltype`, SFINAE.
 Code Demo: Implement template-based vector/matrix class 
 
-| 1   | **Effective Modern C++, Item 21-23<br>- Longest Palindromic Substring<br>- Container With Most Water** |
+| 1   | **Effective Modern C++, Item 22-24<br>- Longest Palindromic Substring<br>- Container With Most Water** |
 | --- | ------------------------------------------------------------------------------------------------------ |
-| 2   | Effective Modern C++, Item 24-25<br>- 3Sum<br>- Remove Nth Node from End of List                       |
-| 3   | Effective Modern C++, Item 27-29<br>- Search in Rotated Sorted Array<br>- Combination Sum              |
-| 4   | Effective Modern C++, Item 30-32<br>- Combination Sum<br>- Rotate Image<br>                            |
-| 5   | Effective Modern C++, Item 33-35<br>- Group Anagrams<br>- Maximum Subarray                             |
-| 6   | Effective Modern C++, Item 36-39<br>- Spiral Matrix<br>- Jump Game                                     |
+| 2   | Effective Modern C++, Item 25-27<br>- 3Sum<br>- Remove Nth Node from End of List                       |
+| 3   | Effective Modern C++, Item 28-30<br>- Search in Rotated Sorted Array<br>- Combination Sum              |
+| 4   | Effective Modern C++, Item 31-33<br>- Combination Sum<br>- Rotate Image<br>                            |
+| 5   | Effective Modern C++, Item 33-36<br>- Group Anagrams<br>- Maximum Subarray                             |
+| 6   | Effective Modern C++, Item 37-39<br>- Spiral Matrix<br>- Jump Game                                     |
 | 7   | Effective Modern C++, Item 40-42<br>- Merge Intervals<br>- Unique Paths                                |
 
 ### Week 3: Concurrency Basics

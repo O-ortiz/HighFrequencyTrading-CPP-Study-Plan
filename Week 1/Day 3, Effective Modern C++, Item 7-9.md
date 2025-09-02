@@ -1,6 +1,6 @@
 ## Chapter 3: Moving to Modern C++
 
-### Item 7: Distinguish between () and {} when creating objects.
+### **Item 7: Distinguish between () and {} when creating objects.**
 
 "braced initialization"
 
@@ -58,7 +58,7 @@ Things to remember:
 -Avoid overloading on intergral and pointer types
 
 
-### Item 9: Prefer alias declarations to typedef
+### **Item 9: Prefer alias declarations to typedef**
 
 Typedef example:
 typedef
