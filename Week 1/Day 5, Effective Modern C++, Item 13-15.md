@@ -56,3 +56,89 @@ Things to remember:
 
 ### **Item 15: Use constexpr whenever possible.**
 
+ Constrexpr for object is a beefed up const, indicates when something is known at compilation. 
+
+Values known at compilation time are privileged and can be placed in read-only memory. 
+
+Integral values that are constant and known during compilation can be used in conctexts where C++ requires an integral constant expression, such as specifying size of std::array)
+
+```
+int sz; // non-constexpr variable
+…
+constexpr auto arraySize1 = sz; // error! sz's value not
+ // known at compilation
+ 
+std::array<int, sz> data1; // error! same problem
+
+constexpr auto arraySize2 = 10; // fine, 10 is a
+ // compile-time constant
+ 
+std::array<int, arraySize2> data2; // fine, arraySize2
+ // is constexpr
+
+```
+
+All constexpr are const, but not all const are constexpr. 
+
+Constexpr functions: 
+- can produce a compile-time constant when they are called with compile-time constats. 
+- if they are called with values not known until runtime, they produce runtime values. 
+
+This means you don't need two functions to perform the same operation if one of them needs to be able to return a compile-time constant. 
+
+Restrictions are imposed on constexpr function since they must be able to return compile-time results:
+- In C++11, constexpr functions may contain no more than a single executable statement: a return. Can use two trick, conditionals and recursion. 
+- . In C++14, the restrictions on constexpr func‐ tions are substantially looser, so the following implementation becomes possible:
+```
+constexpr int pow(int base, int exp) noexcept // C++14
+{
+	 auto result = 1;
+	 for (int i = 0; i < exp; ++i) result *= base;
+	 return result;
+}
+
+```
+
+Constexpr functions are limited to taking and returning literal types, basically types that can have values determined during compilation. 
+In C++11 all built in types except void qualify.
+
+```
+class Point {
+public:
+ constexpr Point(double xVal = 0, double yVal = 0) noexcept
+ : x(xVal), y(yVal)
+ {}
+ constexpr double xValue() const noexcept { return x; }
+ constexpr double yValue() const noexcept { return y; }
+ void setX(double newX) noexcept { x = newX; }
+ void setY(double newY) noexcept { y = newY; }
+private:
+ double x, y;
+};
+```
+
+In C++11, setX and setY cannot be constexpr, because:
+- They modify the object they operate on, and in C++11, constexpr member functions are implicity const. 
+- They have void return types, which isn't a literal type in C++11
+
+Both restrictions lifted in C++14, so we can set Point's setter as constexpr:
+```
+class Point {
+public:
+ …
+ constexpr void setX(double newX) noexcept // C++14
+ { x = newX; }
+ constexpr void setY(double newY) noexcept // C++14
+ { y = newY; }
+ …
+};
+```
+
+constexpr is part of an object’s or function’s interface, it proclaims "“I can be used in a context where C++ requires a constant expression." Clients may use a constexpr in that context, if you decided to change that later it may cause issues or disallow compilation. 
+
+Things to remember:
+- constexpr objects are consts and are initialized with values known during compilation
+- constexpr functions can produce compile-time results when called with arguments whose values are known during compilation
+- constexpr objects and functions may be used in wider range of contexts than non-constexpr objects and functions 
+- constexpr is part of an objects' or function's interface 
+
