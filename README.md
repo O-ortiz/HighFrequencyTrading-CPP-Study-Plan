@@ -18,7 +18,7 @@ Code Demo: `unique_ptr` demo (constructor, destructor, move).
 | 2   | Effective Modern C++, Item 4-6<br>- Climbing Stairs<br>- Same Tree<br>- Maximum Depth of Binary Tree              | ✔️  |
 | 3   | Effective Modern C++, Item 7-9<br>- Best Time to Buy and Sell Stock<br>- Valid Palindrome<br>- Linked List Cycle  | ✔️  |
 | 4   | Effective Modern C++, Item 10-12<br>- Reverse Bits<br>- Number of 1 Bits<br>- Reverse Linked List                 | ✔️  |
-| 5   | Effective Modern C++, Item 13-15<br>- Contains Duplicate<br>- Invert Binary Tree<br>- Valid Anagram               |     |
+| 5   | Effective Modern C++, Item 13-15<br>- Contains Duplicate<br>- Invert Binary Tree<br>- Valid Anagram               | ✔️  |
 | 6   | Effective Modern C++, Item 16-18<br>- Meeting Rooms<br>- Missing Number<br>- Counting Bits                        |     |
 | 7   | Effective Modern C++, Item 19-21<br>- Subtree of Another Tree<br>- Longest Substring Without Repeating Characters |     |
 
